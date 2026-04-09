@@ -52,7 +52,7 @@ const ServicesSection = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-5xl text-white tracking-tight">What we do</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl text-white tracking-tight">What we do</h2>
           <p className="text-white/40 text-sm hidden md:block">Our services</p>
         </motion.div>
 

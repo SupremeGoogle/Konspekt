@@ -16,7 +16,7 @@ const HeroSection = () => {
         variants={titleVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
-        className="text-6xl md:text-7xl lg:text-8xl text-white tracking-tight whitespace-normal font-serif mb-8"
+        className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white tracking-tight whitespace-normal font-serif mb-6 md:mb-8"
       >
         🚀 Мастер-класс по <em className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/60">Искусственному Интеллекту</em>
       </motion.h1>
@@ -26,7 +26,7 @@ const HeroSection = () => {
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ delay: 0.2 }}
-        className="text-white/70 text-lg md:text-xl leading-relaxed px-4 max-w-3xl"
+        className="text-white/70 text-base md:text-lg lg:text-xl leading-relaxed px-4 max-w-3xl"
       >
         Дорогие родители! На мастер-классе мы научились использовать нейросети не просто как игрушки, а как мощные инструменты для жизни, работы и творчества.
       </motion.p>

@@ -88,7 +88,7 @@ const ContentSection = () => {
             animate={isInView ? 'visible' : 'hidden'}
             className="mb-16 md:mb-24"
           >
-            <h2 className="text-3xl md:text-4xl text-white font-serif mb-8">{service.title}</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-serif mb-6 md:mb-8">{service.title}</h2>
             <div className="space-y-6">
               {service.items.map((item, iIdx) => (
                 <div key={iIdx} className="liquid-glass rounded-2xl p-6 md:p-8">
@@ -173,7 +173,7 @@ const ContentSection = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="mb-20"
         >
-          <h2 className="text-3xl md:text-4xl text-white font-serif mb-8">💡 Главные выводы:</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-serif mb-6 md:mb-8">💡 Главные выводы:</h2>
           <div className="space-y-6">
             {conclusions.map((item, idx) => (
               <div key={idx} className="liquid-glass rounded-2xl p-6 md:p-8">
@@ -213,7 +213,7 @@ const ContentSection = () => {
           animate={isInView ? 'visible' : 'hidden'}
           className="mb-20"
         >
-          <h2 className="text-3xl md:text-4xl text-white font-serif mb-12 text-center">📚 Памятки и шпаргалки</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-serif mb-8 md:mb-12 text-center">📚 Памятки и шпаргалки</h2>
           
           <div className="space-y-12">
             {/* Memory Card 1 - Создание сайта */}
