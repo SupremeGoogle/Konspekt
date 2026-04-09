@@ -1,53 +1,42 @@
-# React + TypeScript + Vite
+# Мастер-класс по Искусственному Интеллекту
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Красивый сайт с конспектами мастер-класса по ИИ, созданный с использованием React, TypeScript и Vite.
 
-Currently, two official plugins are available:
+## 🚀 Развертывание на Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Подготовка проекта:
 
-## React Compiler
+1. **Убедитесь, что все файлы в репозитории:**
+   - `src/` - исходный код
+   - `public/` - статические файлы (картинки, favicon)
+   - `package.json` - зависимости
+   - `vercel.json` - конфигурация для Vercel
+   - `vite.config.ts` - конфигурация Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. **Проверьте, что картинки находятся в папке `public/`:**
+   - `memory1.png`
+   - `memory2.png`
 
-## Expanding the ESLint configuration
+### Развертывание:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Подключите GitHub репозиторий к Vercel
+2. Vercel автоматически обнаружит конфигурацию из `vercel.json`
+3. Сайт будет доступен по сгенерированному URL
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Возможные проблемы и решения:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Ошибка сборки:** Убедитесь, что все зависимости установлены (`npm install`)
+- **Картинки не загружаются:** Проверьте, что файлы находятся в папке `public/`
+- **Пути к файлам:** Используйте `/filename` для файлов из `public/`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Технологии
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
